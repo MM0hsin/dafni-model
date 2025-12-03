@@ -19,7 +19,8 @@ spec:
       - name: STRUCTURE
         title: Structure
         description: An input structure in cif, xyz or extxyz format
-        type: file
+        type: string
+        default: '/app/aiida_mlip/inputs/qmof-00d09fe.cif'
         required: true
   outputs:
     datasets:
