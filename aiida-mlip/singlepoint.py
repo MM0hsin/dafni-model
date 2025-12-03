@@ -40,10 +40,10 @@ def run_singlepoint(structure_path: Path):
 def calculation_output_file(results_dict: Dict, xyz_output: SinglefileData):
 
     with xyz_output.open(mode='rb') as source:
-        with open(f"{OUTPUT_FOLDER}/structure.txt", mode='wb') as target:
+        with open(f"{OUTPUT_FOLDER}/structure.xyz", mode='wb') as target:
             shutil.copyfileobj(source, target)
     
-    with open(f"{OUTPUT_FOLDER}/results_dict.txt", mode='w') as target:
+    with open(f"{OUTPUT_FOLDER}/results_dict.yaml", mode='w') as target:
         yaml.dump(results_dict.get_dict(), target)
 
 
