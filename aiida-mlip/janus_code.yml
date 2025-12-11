@@ -1,8 +1,0 @@
-append_text: ''
-computer: localhost
-default_calc_job_plugin: mlip.sp
-description: janus-core
-filepath_executable: /usr/local/bin/janus
-label: janus
-prepend_text: ''
-use_double_quotes: 'False'
