@@ -12,4 +12,4 @@ RUN mkdir -p /app/outputs/
 RUN verdi presto
 RUN verdi code create core.code.installed --config /app/aiida-mlip/janus_code.yml
 
-CMD ["python3", "/app/aiida-mlip/singlepoint.py"] 
+CMD ["python3", "/app/aiida-mlip/singlepoint.py"] ¬
